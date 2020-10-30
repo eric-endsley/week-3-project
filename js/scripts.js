@@ -1,6 +1,5 @@
 // UI Logic:
 let userInput = whatTheUserInputs
-let numberArray = [...Array(userInput+1).keys()];
 
 // Describe: .beepBoop
 // Test: "It should return an array from 0 to whatever number is passed as an argument"
@@ -14,3 +13,10 @@ let numberArray = [...Array(userInput+1).keys()];
 
 // Test: "Numbers in the returned array containing a 1 and not containing a 2 or a 3 should be replaced with 'Beep'"
 // Expect(beepBoop(14)).toEqual([0, ... 9, "Beep", "Beep", "Boop", "Won't you be my neighbor", "Beep"]);
+
+function beepBoop(inputNumber) {
+  let numberArray = [...Array(inputNumber+1).keys()];
+  console.log(numberArray)
+
+}
+beepBoop(0)
