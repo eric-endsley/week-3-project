@@ -16,7 +16,15 @@ let userInput = whatTheUserInputs
 
 function beepBoop(inputNumber) {
   let numberArray = [...Array(inputNumber+1).keys()];
-  console.log(numberArray)
+  let beepBoopArray = []
+  numberArray.forEach(function(number) {
+    if (number.toString().includes("3")) {
+      beepBoopArray.push("Won't you be my neighbor?")
+    } else {
+      beepBoopArray.push(number)
+    };
+    
+  });
+  console.log(beepBoopArray)
+}; 
 
-}
-beepBoop(0)
