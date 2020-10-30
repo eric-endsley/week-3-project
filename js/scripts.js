@@ -1,5 +1,5 @@
 // UI Logic:
-let userInput = whatTheUserInputs
+
 
 // Describe: .beepBoop
 // Test: "It should return an array from 0 to whatever number is passed as an argument"
@@ -20,11 +20,16 @@ function beepBoop(inputNumber) {
   numberArray.forEach(function(number) {
     if (number.toString().includes("3")) {
       beepBoopArray.push("Won't you be my neighbor?")
-    } else {
+    } else if (number.toString().includes("2")) {
+      beepBoopArray.push("Boop!")
+    } else if (number.toString().includes("1")) {
+      beepBoopArray.push("Beep!")
+    }
+    else {
       beepBoopArray.push(number)
     };
-    
   });
-  console.log(beepBoopArray)
+  return(beepBoopArray)
 }; 
+console.log(beepBoop(10))
 
