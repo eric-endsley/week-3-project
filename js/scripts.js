@@ -1,14 +1,4 @@
 
-$(document).ready(function() {
-
-// UI Logic:
-  $("form#beep-boop").submit(function(event) {
-    event.preventDefault();
-
-    const numberInput = parseInt($("input#numberInput").val());
-    $(".output").text(beepBoop(numberInput).toString());
-  });
-
 // Business Logic: 
   function beepBoop(inputNumber) {
     let numberArray = [...Array(inputNumber+1).keys()];
@@ -26,4 +16,15 @@ $(document).ready(function() {
     });
     return(beepBoopArray)
   };
+
+  // UI Logic:
+  $(document).ready(function() {
+    $("form#beep-boop").submit(function(event) {
+      event.preventDefault();
+  
+      const numberInput = parseInt($("input#numberInput").val());
+      const outputArray = beepBoop(numberInput)
+      $(".output").text(outputArray);
+    });
+  
 });
