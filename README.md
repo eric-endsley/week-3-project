@@ -9,19 +9,19 @@ This webpage consists of a single input form which prompts the user to enter a n
 
 ## Tests & Specs
 #### Tests
-//Describe: .beepBoop
+Describe: .beepBoop
 
-//Test: "It should return an array from 0 to whatever number is passed as an argument" <br>
-//Expect(beepBoop(0).toEqual([0]);
+Test: "It should return an array from 0 to whatever number is passed as an argument" <br>
+Expect(beepBoop(0).toEqual([0]);
 
-//Test: "It should replace numbers in the returned array containing a 3 with 'Won't you be my neighbor?'<br>
-//Expect(beepBoop(3)).toEqual([0, 1, 2, "Won't you be my neighbor"]);
+Test: "It should replace numbers in the returned array containing a 3 with 'Won't you be my neighbor?'<br>
+Expect(beepBoop(3)).toEqual([0, 1, 2, "Won't you be my neighbor"]);
 
-//Test: "It should replace numbers in the returned array containing a 2 and not containing a 3 with "Boop"."<br>
-//Expect(beepBoop(23)).toEqual([0, ... 19, "Boop", "Boop", "Boop", "Won't you be my neighbor", "Boop"]);
+Test: "It should replace numbers in the returned array containing a 2 and not containing a 3 with "Boop"."<br>
+Expect(beepBoop(23)).toEqual([0, ... 19, "Boop", "Boop", "Boop", "Won't you be my neighbor", "Boop"]);
 
-//Test: "It should replaces numbers in the returned array containing a 1 and not containing a 2 or a 3 with "Beep""<br>
-//Expect(beepBoop(14)).toEqual([0, ... 9, "Beep", "Beep", "Boop", "Won't you be my neighbor", "Beep"]);
+Test: "It should replaces numbers in the returned array containing a 1 and not containing a 2 or a 3 with "Beep""<br>
+Expect(beepBoop(14)).toEqual([0, ... 9, "Beep", "Beep", "Boop", "Won't you be my neighbor", "Beep"]);
 
 #### Specs
 | Test | Input | Output |
@@ -31,7 +31,6 @@ This webpage consists of a single input form which prompts the user to enter a n
 | should replace numbers in the returned array containing a 3 with 'Won't you be my neighbor?'| 3 | [0, 1, 2, "won't you be my neighbor"] |
 | should replace numbers in the returned array containing a 2 and not containing a 3 with "Boop" | 23 | [0, ... 19, "Boop", "Boop", "Boop", "Won't you be my neighbor", "Boop"] |
 | should replace numbers in the returned array containing a 1 and not containing a 2 or a 3 with "Beep"|14| [0, ... 9, "Beep", "Beep", "Boop", "Won't you be my neighbor", "Beep"] |
-
 
 ## Setup
 #### Clone and Open Locally
