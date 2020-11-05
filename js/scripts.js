@@ -22,8 +22,8 @@ $(document).ready(function() {
   $("form#beep-boop").submit(function(event) {
     event.preventDefault();
 
-    let numberInput = parseInt($("input#numberInput").val());
-    let outputArray = beepBoop(number-input)
+    let numberInput = parseInt($("input#number-input").val());
+    let outputArray = beepBoop(numberInput)
     $(".output").text(outputArray);
   });
 });
